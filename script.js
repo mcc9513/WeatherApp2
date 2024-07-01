@@ -2,7 +2,7 @@ const apiKey = "f2015de3037498f86f491dd2167601a9";
 const apiUrlZip = "https://api.openweathermap.org/data/2.5/weather?units=imperial&zip=";
 const apiUrlCity = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 
-const searchBoxZip = document.querySelector("#zipcode");
+const searchBoxZip = document.querySelector("#zipcode"); // hashtag refrences an id
 const searchBoxCity = document.querySelector("#city");
 const searchBoxState = document.querySelector("#state");
 const searchBtn = document.querySelector("#search-btn");
