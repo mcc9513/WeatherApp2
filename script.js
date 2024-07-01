@@ -16,12 +16,14 @@ let useZip = true;
 async function checkWeather(query, isZip = true) {
     const apiUrl = isZip ? `${apiUrlZip}${query},US&appid=${apiKey}` : `${apiUrlCity}${query}&appid=${apiKey}`;
     const response = await fetch(apiUrl);
+    //The fetch function initiates an HTTP request to the specified apiUrl. It returns a Promise that resolves to the Response object representing the complete response.
 
     if (response.status == 404) {
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
     } else {
         let data = await response.json();
+        // The response.json() method returns a Promise that resolves to the parsed JSON object.
 
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
