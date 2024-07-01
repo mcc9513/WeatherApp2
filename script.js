@@ -2,14 +2,14 @@ const apiKey = "f2015de3037498f86f491dd2167601a9";
 const apiUrlZip = "https://api.openweathermap.org/data/2.5/weather?units=imperial&zip=";
 const apiUrlCity = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 
-const searchBoxZip = document.querySelector("#zipcode"); // hashtag refrences an id
+const searchBoxZip = document.querySelector("#zipcode"); // hashtag refrences an id(id being a css selector)
 const searchBoxCity = document.querySelector("#city");
 const searchBoxState = document.querySelector("#state");
 const searchBtn = document.querySelector("#search-btn");
 const toggleSearchBtn = document.querySelector("#toggle-search-btn");
 const toggleTempBtn = document.querySelector("#toggle-temp-btn");
 const weatherIcon = document.querySelector(".weather-icon");
-
+// querySelector elects the first element that matches a specified CSS selector(s) from the document
 let isFahrenheit = true;
 let useZip = true;
 
